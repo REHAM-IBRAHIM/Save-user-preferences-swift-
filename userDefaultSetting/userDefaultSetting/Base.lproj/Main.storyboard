@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="userDefaultSetting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;العالم يتسع لكل الناجحين بالغًا ما بلغ عددهم&quot; - غازي القصيبي" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dum-eM-Z3e">
+                                <rect key="frame" x="46" y="98" width="332" height="651"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="651" id="fTq-Zq-bpr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GnE-NC-bFv">
+                                <rect key="frame" x="0.0" y="785" width="394" height="59"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YFz-lH-hnx">
+                                        <rect key="frame" x="298.5" y="0.0" width="95.5" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vrq-FO-Ecr">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="24"/>
+                                                <color key="tintColor" name="Color"/>
+                                                <state key="normal" image="minus.circle.fill" catalog="system">
+                                                    <color key="titleColor" name="textColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="smallFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mh-Xr-4gF"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الخط" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-XO-1bd">
+                                                <rect key="frame" x="28" y="0.0" width="39.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95Z-Du-NiW">
+                                                <rect key="frame" x="75.5" y="0.0" width="20" height="24"/>
+                                                <color key="tintColor" name="Color"/>
+                                                <state key="normal" image="plus.circle.fill" catalog="system">
+                                                    <color key="titleColor" name="textColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bigFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaQ-p6-O3R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Odp-dC-RvY">
+                                        <rect key="frame" x="230.5" y="28" width="163.5" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8IF-KF-lOA">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="1" green="0.64676898719999998" blue="0.61702805760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="12X-QN-v1M"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="القراءة الليلية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOl-zv-Bbr">
+                                                <rect key="frame" x="65" y="0.0" width="98.5" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ــــــــــ اقتباس اليوم ــــــــــ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuj-We-djP">
+                                <rect key="frame" x="46" y="63" width="349" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dum-eM-Z3e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="98" id="0yV-S0-mA2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GnE-NC-bFv" secondAttribute="bottom" constant="18" id="1b1-wK-vhM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GnE-NC-bFv" secondAttribute="trailing" constant="20" id="AWq-SN-a5j"/>
+                            <constraint firstItem="Xuj-We-djP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GZZ-sd-WaP"/>
+                            <constraint firstItem="Dum-eM-Z3e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="HRI-e9-JR8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dum-eM-Z3e" secondAttribute="trailing" constant="36" id="Slz-vB-eIm"/>
+                            <constraint firstItem="GnE-NC-bFv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="buI-yV-JDF"/>
+                            <constraint firstItem="Dum-eM-Z3e" firstAttribute="top" secondItem="Xuj-We-djP" secondAttribute="bottom" constant="8" id="dGk-TA-GoP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="darkModeSwitch" destination="8IF-KF-lOA" id="xct-cM-cLy"/>
+                        <outlet property="labelText" destination="Dum-eM-Z3e" id="UAv-gB-tKc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="Color">
+            <color red="0.22699999809265137" green="0.22699999809265137" blue="0.23500001430511475" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="1" green="0.97168648242950439" blue="0.91900002956390381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.0" green="0.0060000000521540642" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
